@@ -10,3 +10,44 @@ img {
 }
 
 /* Slutt av CSS style reset */
+
+/* NAV */
+
+header{
+    margin-bottom: 50px;
+}
+
+nav {
+    height: 150px;
+    width: 100%;
+    background-color: lightblue;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.navknapp {
+    color: white;
+    background-color: lightblue;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    text-decoration: none;
+    padding: 60px;
+}
+
+
+.navknapp:hover{
+    background-color: rgb(143, 186, 200);
+}
+
+
+
+#mellomrom{
+    height: 150px;
+    width: 100%;
+}
