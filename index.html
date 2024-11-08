@@ -8,14 +8,101 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
 
     <style>
+        
+        nav{
+            height: 150px;
+            width: 100%;
+            background-color: cyan;
+            position: fixed;
+        }
+
+        #mellomrom{
+            height: 150px;
+            width: 100%;
+        }
+        
+        .overskrift{
+
+            background-image: url();
+
+        }
+
+        .grid-container {
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+        .index .grid-container{
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 200px 200px 200px 200px 200px;
+        }
+
+        .index article{
+            grid-column: 1/3;
+            grid-row: 1/3;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid black;
+    
+
+        }
+
+        .index aside{
+            grid-column: 3/5;
+            grid-row: 1/3;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid black;
+
+
+        }
+
+        .index .bilder{
+            grid-column: 1/5;
+            grid-row: 3/5;
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid black;
+
+
+        }
 
     </style>
 </head>
-<body>
-<header></header>
+<body class="index">
 
-<main></main>
 
-<footnote></footnote>
+
+
+    <header>
+        <nav>
+
+        </nav>
+        <div id="mellomrom">
+
+        </div>
+
+
+        <div class="overskrift">
+
+        </div>
+
+        
+    </header>
+
+    <main class="grid-container">
+        <article> 
+
+        </article>
+        <aside>
+
+        </aside>
+        <div class="bilder">
+
+        </div>
+    </main>
+
+    <footnote></footnote>
+
+
 </body>
 </html>
