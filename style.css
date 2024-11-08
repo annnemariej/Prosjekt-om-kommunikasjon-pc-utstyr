@@ -1,3 +1,5 @@
+/* CSS style reset*/
+
 * {
     margin: 0;
     padding: 0;
@@ -6,3 +8,5 @@
 img {
     width: 100%;
 }
+
+/* Slutt av CSS style reset */
