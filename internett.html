@@ -34,6 +34,7 @@
             padding: 20px;
             background-color: rgba(255, 255, 255, 0.8);
             border: 1px solid black;
+            display: flex;
         }
         .internett article{
             grid-column: 2/4;
@@ -48,6 +49,26 @@
             padding: 20px;
             background-color: rgba(255, 255, 255, 0.8);
             border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        .tekst{
+            width: 200px;
+            font-size: 12px;
+            opacity: 0;
+            position: absolute;
+        }
+        .bilder img{
+            width: 250px;
+        }
+        .bilde:hover{
+            opacity: 0.7;
+        }
+        .bilder:hover .tekst{
+            opacity: 1;
         }
     </style>
 
@@ -81,13 +102,29 @@
     </header>
     <main class="grid-container">
         <aside>
-
         </aside>
         <article>
 
         </article>
         <div class="bilder">
-
+            <div class="bilde">
+            <img src="bilder/ekorn.jpg">
+            </div>
+            <div class="tekst">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda officia dolor et minus impedit deserunt consequuntur. Voluptate fugit ea obcaecati, hic fuga facere eligendi praesentium assumenda, repellendus, iste ad similique?</p>
+            </div>
+            <div class="bilde">
+                <img src="bilder/ekorn.jpg">
+            </div>
+            <div class="tekst">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda officia dolor et minus impedit deserunt consequuntur. Voluptate fugit ea obcaecati, hic fuga facere eligendi praesentium assumenda, repellendus, iste ad similique?</p>
+            </div>
+            <div class="bilde">
+                <img src="bilder/ekorn.jpg">
+            </div>
+            <div class="tekst">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda officia dolor et minus impedit deserunt consequuntur. Voluptate fugit ea obcaecati, hic fuga facere eligendi praesentium assumenda, repellendus, iste ad similique?</p>
+            </div>
         </div>
     </main>
 
