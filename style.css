@@ -60,7 +60,7 @@ nav {
 }
 
  .navknapp:hover{
-    background-color: rgb(38, 37, 33);
+    background-color: rgb(88, 87, 85) !important;
     color: rgb(241 240 236);
 }
 .fa-home{
@@ -77,4 +77,8 @@ nav {
 #mellomrom{
     height: 80px;
     width: 100%;
+}
+nav a#active{
+    background-color: rgb(38, 37, 33);
+    color: rgb(241 240 236);
 }

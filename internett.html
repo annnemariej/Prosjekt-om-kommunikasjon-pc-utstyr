@@ -87,21 +87,24 @@
             font-size: 12px;
             opacity: 0;
             position: absolute;
+            flex-wrap: nowrap;
         }
         .under_tekst{
             position: relative;
             font-size: 12px;
-            width: 200px;
+            width: 80%;
             padding: 20px;
         }
         .bilder img{
-            width: 250px;
+            width: 250px; 
         }
-        .bilder .bilde:hover{
-            opacity: 0.7;
+        .bilder .bilde:hover img{
+            opacity: 0.5;
         }
-        .bilde:hover .tekst{
-            opacity: 1 !important;
+        .bilder .bilde:hover .tekst{
+            opacity: 1;
+            color: black;
+            font-weight: 300;
         }
         footer{
             height: 150px;
@@ -126,6 +129,7 @@
             position: absolute;
             width: 100px;
             transform: translate(50%, 50%);
+            z-index: 999;
         }
         .internett .bilde{
             display: flex;
@@ -148,7 +152,7 @@
                 <a href="nettverk.html" class="navknapp">
                         Nettverk
                 </a>
-                <a href="internett.html" class="navknapp">
+                <a href="internett.html" id="active" class="navknapp">
                         Internett
                 </a>
             </div>
@@ -175,11 +179,11 @@
         <div class="bilder">
             <div class="bilde">
                 <img src="bilder/ekorn.jpg">
-                <div class="tekst">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda officia dolor et minus impedit deserunt consequuntur. Voluptate fugit ea obcaecati, hic fuga facere eligendi praesentium assumenda, repellendus, iste ad similique?</p>
-                </div>
                 <div class="sticker">
                     <img src="bilder/stickers/pekemus.png">
+                </div>
+                <div class="tekst">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda officia dolor et minus impedit deserunt consequuntur. Voluptate fugit ea obcaecati, hic fuga facere eligendi praesentium assumenda, repellendus, iste ad similique?</p>
                 </div>
             </div>
             <div class="bilde">
