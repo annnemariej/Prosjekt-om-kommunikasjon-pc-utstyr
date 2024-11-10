@@ -37,6 +37,8 @@ nav {
     text-align: center;
     z-index: 1000;
     border-bottom: 1px solid rgb(38, 37, 33);
+}
+.internett nav{
     margin-inline: 20px;
 }
 
@@ -44,7 +46,6 @@ nav {
     color: rgb(38, 37, 33);
     background-color: rgb(241 240 236);
     height: 80px;
-    width: 25%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,16 +55,25 @@ nav {
     font-weight: 100;
     border-bottom: 0.5px solid rgb(38, 37, 33);
     padding-inline: 20px;
+    justify-content: flex-start;
 
 }
 
-.navknapp:hover{
-    color: rgb(38, 37, 33);
+ .navknapp:hover{
+    background-color: rgb(38, 37, 33);
     color: rgb(241 240 236);
 }
-
-
-
+.fa-home{
+    font-size: 90px;
+    
+}
+.høyre{
+    display: flex;
+    right: 0;
+    width: 100%;
+    justify-content: flex-end;
+    
+}
 #mellomrom{
     height: 80px;
     width: 100%;

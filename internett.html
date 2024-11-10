@@ -16,7 +16,7 @@
             display: flex;
             justify-content: center;
             margin: 30px;
-            margin-top: -58px;
+            margin-top: -70px;
             border-radius: 1%;
         }
         .internett .hero-image{
@@ -26,9 +26,10 @@
             display: flex;
             position: relative;
             color: rgb(38, 37, 33);
-            font-size: 100px;
+            font-size: 120px;
             justify-content: center;
             margin-bottom: 0;
+            margin-top: 40px;
         }
         .overskrift h1{
             font-family: "Space Grotesk", sans-serif;
@@ -68,10 +69,12 @@
             align-items: center;
             justify-content: space-evenly;
             flex-wrap: wrap;
+            position: relative;
         }
         aside .bilde{
             width: 100%;
             padding: 20px;
+            
             
         }
         #bilde_lang{
@@ -94,22 +97,24 @@
         .bilder img{
             width: 250px;
         }
-        .bilde:hover{
+        .bilder .bilde:hover{
             opacity: 0.7;
         }
-        .bilder:hover .tekst{
-            opacity: 1;
+        .bilde:hover .tekst{
+            opacity: 1 !important;
         }
         footer{
             height: 150px;
             margin-top: 30px;
-            color: rgb(38, 37, 33);
+            background-color: rgb(38, 37, 33);
+            color:rgb(241 240 236) ;
         }
         .høyre{
             display: flex;
             right: 0;
             width: 100%;
             justify-content: flex-end;
+
         }
         .fa-home{
             font-size: 90px;
@@ -120,7 +125,12 @@
         .bilde .sticker{
             position: absolute;
             width: 100px;
-            transform: translate(100%, -50%);
+            transform: translate(50%, 50%);
+        }
+        .internett .bilde{
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     </style>
 
@@ -164,30 +174,33 @@
         </article>
         <div class="bilder">
             <div class="bilde">
-            <img src="bilder/ekorn.jpg">
-            <div class="sticker">
-                <img src="bilder/stickers/pekemus.png">
-            </div>
-            </div>
-            <div class="tekst">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda officia dolor et minus impedit deserunt consequuntur. Voluptate fugit ea obcaecati, hic fuga facere eligendi praesentium assumenda, repellendus, iste ad similique?</p>
+                <img src="bilder/ekorn.jpg">
+                <div class="tekst">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda officia dolor et minus impedit deserunt consequuntur. Voluptate fugit ea obcaecati, hic fuga facere eligendi praesentium assumenda, repellendus, iste ad similique?</p>
+                </div>
+                <div class="sticker">
+                    <img src="bilder/stickers/pekemus.png">
+                </div>
             </div>
             <div class="bilde">
                 <img src="bilder/ekorn.jpg">
-            </div>
-            <div class="tekst">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda officia dolor et minus impedit deserunt consequuntur. Voluptate fugit ea obcaecati, hic fuga facere eligendi praesentium assumenda, repellendus, iste ad similique?</p>
+                <div class="tekst">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda officia dolor et minus impedit deserunt consequuntur. Voluptate fugit ea obcaecati, hic fuga facere eligendi praesentium assumenda, repellendus, iste ad similique?</p>
+                </div>
             </div>
             <div class="bilde">
                 <img src="bilder/ekorn.jpg">
-            </div>
-            <div class="tekst">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda officia dolor et minus impedit deserunt consequuntur. Voluptate fugit ea obcaecati, hic fuga facere eligendi praesentium assumenda, repellendus, iste ad similique?</p>
+                <div class="tekst">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda officia dolor et minus impedit deserunt consequuntur. Voluptate fugit ea obcaecati, hic fuga facere eligendi praesentium assumenda, repellendus, iste ad similique?</p>
+                </div>
+                <div class="tekst">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda officia dolor et minus impedit deserunt consequuntur. Voluptate fugit ea obcaecati, hic fuga facere eligendi praesentium assumenda, repellendus, iste ad similique?</p>
+                </div>
             </div>
         </div>
     </main>
     <footer>
-
+        <p>footer</p>
     </footer>
 </body>
 </html>
