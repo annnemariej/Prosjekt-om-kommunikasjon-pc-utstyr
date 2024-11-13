@@ -8,13 +8,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 img {
     width: 100%;
 }
 
 /* Slutt av CSS style reset */
 
-body{
+body {
     font-family: 'Roboto';
     font-weight: 100;
     background-color: rgb(241 240 236);
@@ -22,7 +23,7 @@ body{
 
 /* NAV */
 
-header{
+header {
     margin-bottom: 50px;
 }
 
@@ -36,11 +37,9 @@ nav {
     align-items: center;
     text-align: center;
     z-index: 1000;
-    border-bottom: 1px solid rgb(38, 37, 33);
-    margin-inline: 20px;
 }
-.internett nav{
-}
+
+.internett nav {}
 
 .navknapp {
     color: rgb(38, 37, 33);
@@ -52,24 +51,40 @@ nav {
     text-decoration: none;
     font-family: 'Roboto';
     font-weight: 400;
-    border-bottom: 0.5px solid rgb(38, 37, 33);
     padding-inline: 20px;
 
 }
 
- .navknapp:hover{
+.navknapp:hover {
     background-color: rgb(88, 87, 85) !important;
     color: rgb(241 240 236);
 }
-.fa-home{
+
+.fa-home {
     font-size: 90px;
-    
+
 }
-#mellomrom{
+
+#mellomrom {
     height: 80px;
     width: 100%;
 }
-nav a#active{
+
+nav a#active {
     background-color: rgb(38, 37, 33);
     color: rgb(241 240 236);
+}
+
+
+
+nav::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 97%;
+    background-color: rgb(38, 37, 33);
+    bottom: 0;
+    left: 0;
+    margin: auto;
+
 }
