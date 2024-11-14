@@ -19,6 +19,12 @@ body{
     font-weight: 100;
     background-color: rgb(241 240 236);
 }
+footer {
+    height: 150px;
+    margin-top: 30px;
+    background-color: rgb(38, 37, 33);
+    color: rgb(241 240 236);
+}
 
 /* NAV */
 

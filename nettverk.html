@@ -40,6 +40,97 @@
         .fa-home{
             font-size: 90px;
         }
+
+        .nettverk .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 450px 450px 450px;
+            width: 100vw;
+
+        }
+        .nettverk .bilder {
+            grid-column: 1/3;
+            grid-row: 3/4;
+            padding: 20px;
+            background-color: rgb(241 240 236);
+            border: 1px solid black;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            position: relative;
+        }
+        .nettverk aside .en{
+            grid-column: 1/2;
+            grid-row: 1/2;
+            background-color: rgb(241 240 236);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+        }
+        .nettverk aside .to{
+            grid-column: 2/3;
+            grid-row: 2/3;
+            background-color: rgb(241 240 236);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid black;
+        }
+
+        .nettverk article .en{
+            grid-column: 2/3;
+            grid-row: 1/2;
+            padding: 20px;
+            background-color: rgb(241 240 236);
+            display: flex;
+            justify-content: center;
+            border: 1px solid black;
+
+        }
+        .nettverk article .to{
+            grid-column: 1/2;
+            grid-row: 2/3;
+            padding: 20px;
+            background-color: rgb(241 240 236);
+            display: flex;
+            justify-content: center;
+            border: 1px solid black;
+
+        }
+        .bilder img {
+            width: 250px;
+        }
+        .bilder .bilde:hover img {
+            opacity: 0.1;
+        }
+
+        .bilder .bilde:hover .sticker img {
+            opacity: 1;
+        }
+
+        .bilder .bilde:hover .tekst {
+            opacity: 1;
+            color: black;
+            font-weight: 300;
+        }
+        .tekst {
+            width: 200px;
+            font-size: 12px;
+            opacity: 0;
+            position: absolute;
+            flex-wrap: nowrap;
+        }
+        aside .bilde{
+            display: flex;
+            justify-content: center;
+        }
+        aside .bilde img{
+            width: 500px;
+        }
     </style>
 </head>
 <body class="nettverk">
@@ -68,8 +159,54 @@
         </div>
 
     </header>
-    <main>
-        <
+    <main class="grid-container">
+        <aside class="en">
+            <div class="bilde">
+                <img src="bilder/internett/internett_bilde1.jpeg">
+            </div>
+        </aside>
+        <article class=en">
+
+        </article>
+        <aside class="to">
+            <div class="bilde">
+                <img src="bilder/internett/internett_bilde1.jpeg">
+            </div>
+        </aside>
+        <article class="to">
+
+        </article>
+        <div class="bilder">
+            <div class="bilde">
+                <img src="bilder/internett/internett_bilde1.jpeg">
+                <div class="tekst">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda officia dolor et minus
+                        impedit deserunt consequuntur. Voluptate fugit ea obcaecati, hic fuga facere eligendi
+                        praesentium assumenda, repellendus, iste ad similique?</p>
+                </div>
+            </div>
+            <div class="bilde">
+                <img src="bilder/internett/internett_bilde1.jpeg">
+                <div class="tekst">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda officia dolor et minus
+                        impedit deserunt consequuntur. Voluptate fugit ea obcaecati, hic fuga facere eligendi
+                        praesentium assumenda, repellendus, iste ad similique?</p>
+                </div>
+            </div>
+            <div class="bilde">
+                <img src="bilder/internett/internett_bilde1.jpeg">
+                <div class="tekst">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda officia dolor et minus
+                        impedit deserunt consequuntur. Voluptate fugit ea obcaecati, hic fuga facere eligendi
+                        praesentium assumenda, repellendus, iste ad similique?</p>
+                </div>
+                <div class="tekst">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda officia dolor et minus
+                        impedit deserunt consequuntur. Voluptate fugit ea obcaecati, hic fuga facere eligendi
+                        praesentium assumenda, repellendus, iste ad similique?</p>
+                </div>
+            </div>
+        </div>
 
     </main>
     <footer>
