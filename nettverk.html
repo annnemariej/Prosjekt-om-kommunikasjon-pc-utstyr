@@ -41,11 +41,13 @@
             font-size: 90px;
         }
 
-        .nettverk .grid-container {
+         .grid-container {
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 450px 450px 450px;
             width: 100vw;
+            align-items: center;
+            row-gap: 100px;
 
         }
         .nettverk .bilder {
@@ -53,7 +55,6 @@
             grid-row: 3/4;
             padding: 20px;
             background-color: rgb(241 240 236);
-            border: 1px solid black;
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -61,16 +62,15 @@
             flex-wrap: wrap;
             position: relative;
         }
-        .nettverk aside .en{
+        #aside1{
             grid-column: 1/2;
             grid-row: 1/2;
             background-color: rgb(241 240 236);
             display: flex;
             justify-content: center;
             align-items: center;
-            border: 1px solid black;
         }
-        .nettverk aside .to{
+        #aside2{
             grid-column: 2/3;
             grid-row: 2/3;
             background-color: rgb(241 240 236);
@@ -78,28 +78,23 @@
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
-            border: 1px solid black;
         }
 
-        .nettverk article .en{
+        #article1{
             grid-column: 2/3;
             grid-row: 1/2;
             padding: 20px;
             background-color: rgb(241 240 236);
             display: flex;
             justify-content: center;
-            border: 1px solid black;
-
         }
-        .nettverk article .to{
+        #article2{
             grid-column: 1/2;
             grid-row: 2/3;
             padding: 20px;
             background-color: rgb(241 240 236);
             display: flex;
             justify-content: center;
-            border: 1px solid black;
-
         }
         .bilder img {
             width: 250px;
@@ -117,6 +112,11 @@
             color: black;
             font-weight: 300;
         }
+        .bilder .bilde{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         .tekst {
             width: 200px;
             font-size: 12px;
@@ -124,12 +124,13 @@
             position: absolute;
             flex-wrap: nowrap;
         }
-        aside .bilde{
+        .under_tekst {
             display: flex;
-            justify-content: center;
+            width: 60%;
+            padding: 20px;
         }
-        aside .bilde img{
-            width: 500px;
+        .bilde{
+            width: 450px;
         }
     </style>
 </head>
@@ -160,22 +161,24 @@
 
     </header>
     <main class="grid-container">
-        <aside class="en">
+        <div id="aside1">
             <div class="bilde">
                 <img src="bilder/internett/internett_bilde1.jpeg">
             </div>
-        </aside>
-        <article class=en">
-
-        </article>
-        <aside class="to">
+        </div>
+        <div id="article1">
+            <div class="under_tekst">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id voluptate veniam dignissimos iusto in debitis doloribus odit sit deserunt? Molestias ducimus atque rerum, modi dolores laudantium eveniet voluptates. Ea, recusandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor placeat velit, eveniet illum itaque ratione odio aliquid? Sed totam voluptates, itaque rem modi, natus expedita labore cum eum corrupti quisquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem id aut autem corrupti tempore voluptate, accusamus ducimus nulla totam qui error laudantium tenetur quas culpa quasi vitae amet rem quo.</p>
+            </div>
+        </div>
+        <div id="aside2">
             <div class="bilde">
                 <img src="bilder/internett/internett_bilde1.jpeg">
             </div>
-        </aside>
-        <article class="to">
-
-        </article>
+        </div>
+        <div id="article2">
+            <p class="under_tekst">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quo impedit cumque reprehenderit illum eius necessitatibus in ipsum voluptas, velit architecto, beatae provident vel blanditiis accusantium. Corporis facere optio corrupti. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci nesciunt quas nulla totam voluptatibus minus inventore expedita, temporibus iure harum incidunt magnam. Est quaerat nemo error doloribus repellat! Eveniet, neque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora facilis odio nihil laboriosam, provident repellendus ab esse quas eum, ratione asperiores obcaecati nisi aut harum soluta natus nostrum dignissimos dicta!</p>
+        </div>
         <div class="bilder">
             <div class="bilde">
                 <img src="bilder/internett/internett_bilde1.jpeg">
