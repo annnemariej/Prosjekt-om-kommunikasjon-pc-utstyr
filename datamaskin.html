@@ -22,7 +22,7 @@
             font-weight: 900;
         }
         .hero-image{
-            background-image: url(bilder/datamaskin/hero_image_datamaskin.jpeg);
+            background-image: url(bilder/datamaskin/hero_image_datamaskin.jpg);
             background-size: cover;
             height: 450px;
             display: flex;
@@ -37,7 +37,7 @@
         .datamaskin .grid-container {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-rows: 500px 200px 200px;
+            grid-template-rows: 600px 200px 200px;
             row-gap: 100px;
 
         }
@@ -45,7 +45,7 @@
         .datamaskin aside {
             grid-column: 1/3;
             grid-row: 1/2;
-            background-color: rgb(146, 162, 180);
+            background-color: rgb(38, 37, 33);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -55,7 +55,7 @@
             grid-column: 3/5;
             grid-row: 1/2;
             padding: 20px;
-            background-color: rgb(146, 162, 180);
+            background-color: rgb(38, 37, 33);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -68,16 +68,17 @@
             padding: 20px;
             background-color: rgb(241 240 236);
             display: flex;
-            flex-direction: column;
             align-items: center;
-            justify-content: space-between;
+            justify-content: space-evenly;
             flex-wrap: wrap;
             position: relative;
         }
         aside .bilde {
-            width: 90%;
+            width: 600px;
             padding: 20px;
             border-radius: 50%;
+            height: 600px;
+            object-fit: cover;
         }
         .tekst {
             width: 200px;
@@ -85,11 +86,17 @@
             opacity: 0;
             position: absolute;
             flex-wrap: nowrap;
+            display: flex;
+            text-align: center;
+            font-weight: 300;
+            transition: 1.3s;
         }
 
         .hovedtekst {
-            width: 50%;
-
+            width: 70%;
+            color: rgb(241 240 236);
+            font-size: 20px;
+            font-weight: 300;
         }
         .bilder img {
             width: 250px;
@@ -112,13 +119,17 @@
             align-items: center;
             justify-content: center;
         }
-        #mellomrom {
-            height: 120px;
-        }
         .bilder .bilde{
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+        .mellomrom{
+            width: 100%;
+            height: 70px;
+        }
+        .tekst p{
+
         }
 </style>
 </head>
@@ -194,7 +205,10 @@
                 </div>
             </div>
             
-            
+            <div class="mellomrom">
+
+            </div>
+
             <div class="bilde">
                 <img src="bilder/internett/internett_bilde1.jpeg">
                 <div class="tekst">
