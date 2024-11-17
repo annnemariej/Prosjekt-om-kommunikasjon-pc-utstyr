@@ -13,30 +13,40 @@
         header{
             margin-bottom: 50px;
         }     
-
         #mellomrom{
-            height: 150px;
+            height: 105px;
             width: 100%;
         }
 
-        .hero-image{
-            background-image: url(bilder/ekorn.jpg);
+        .hero-image {
+            background-image: url(bilder/index/hero_image_index.jpg);
             background-size: cover;
-            height: 200px;
-
-
+            background-position: 100% 48%;
+            height: 450px;
+            display: flex;
+            justify-content: center;
+            margin: 30px;
+            margin-top: -10px;
+            border-radius: 1%;
+            align-items: center;
         }
 
         .index .hero-image{
             height: 700px;
         }
-        
         .overskrift{
-
-            background-image: url(bilder/ekorn.jpg);
-
+            display: flex;
+            position: relative;
+            color: rgb(241 240 236);
+            font-size: 120px;
+            justify-content: center;
+            margin-bottom: 0;
+            margin-top: 40px;
+            text-align: center;
+            font-family: "Space Grotesk", sans-serif;
+            font-weight: 900;
+            font-size: 50px;
         }
-
         .grid-container {
             display:grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -45,6 +55,7 @@
         .index .grid-container{
             grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-template-rows: 200px 200px 200px 200px;
+            row-gap: 50px;
         }
 
         .index article{
@@ -53,9 +64,9 @@
             padding: 20px;
             background-color: rgb(241 240 236);
             color: rgb(38, 37, 33);
-            border: 1px solid black;
-    
-
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .index aside{
@@ -64,9 +75,9 @@
             padding: 20px;
             background-color: rgb(241 240 236);
             color: rgb(38, 37, 33);
-            border: 1px solid black;
-
-
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .index .bilder{
@@ -74,18 +85,55 @@
             grid-row: 3/5;
             background-color: rgb(241 240 236);
             color: rgb(38, 37, 33);
-            border: 1px solid black;
+            display: flex;
+            justify-content: space-evenly;
         }
 
         footer{
             height: 150px;
             margin-top: 30px;
-            background-color: lightblue;
+            background-color: rgb(38, 37, 33);
         }
         .fa-home{
-            font-size: 90px;
+        font-size: 40px;    
         }
 
+        .bilder .bilde:hover .tekst {
+            opacity: 1;
+            color: black;
+            font-weight: 300;
+        }
+        .bilder .bilde{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .tekst {
+            width: 200px;
+            font-size: 12px;
+            opacity: 0;
+            position: absolute;
+            display: flex;
+            text-align: center;
+            transition: 1.3s;
+            font-weight: 300;
+        }
+        .bilder .bilde img{
+            width: 300px;
+            border-radius: 50%;
+            height: 300px;
+            object-fit: cover;
+        }
+        .bilder .bilde:hover img {
+            opacity: 0.1;
+        }
+        .hovedtekst {
+            width: 50%;
+        }
+        aside .bilde {
+            width: 65%;
+            padding: 20px;
+        }
     </style>
 </head>
 <body class="index">
@@ -114,14 +162,10 @@
         <div id="mellomrom">
 
         </div>
-
-
         <div class="hero-image">
-
             <div class="overskrift">
-
+                <h1>Kommunikasjon mellom digitalt utstyr</h1>
             </div>
-
         </div>
 
         
@@ -129,13 +173,48 @@
 
     <main class="grid-container">
         <article> 
-
+            <div class="hovedtekst">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur
+                    adipisicing elit. Odio nostrum accusantium placeat quibusdam, minima consequatur dolorem temporibus
+                    cupiditate, adipisci, quisquam facilis quia eaque incidunt sint corrupti ullam. At, culpa vel. Lorem
+                    ipsum dolor sit, amet consectetur adipisicing elit. Nihil, recusandae officia. Quis quas vero atque
+                    aut eaque dolor beatae dignissimos iusto, a facere impedit cumque delectus officiis deleniti nisi!
+              
+                </p>
         </article>
         <aside>
-
+            <img class="bilde" src="bilder/internett/internett_bilde1.jpeg">
         </aside>
         <div class="bilder">
-
+            <div class="bilde">
+                <img src="bilder/internett/internett_bilde1.jpeg">
+                <div class="tekst">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda officia dolor et minus
+                        impedit deserunt consequuntur. Voluptate fugit ea obcaecati, hic fuga facere eligendi
+                        praesentium assumenda, repellendus, iste ad similique?</p>
+                </div>
+            </div>
+            <div class="bilde">
+                <img src="bilder/internett/internett_bilde1.jpeg">
+                <div class="tekst">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda officia dolor et minus
+                        impedit deserunt consequuntur. Voluptate fugit ea obcaecati, hic fuga facere eligendi
+                        praesentium assumenda, repellendus, iste ad similique?</p>
+                </div>
+            </div>
+            <div class="bilde">
+                <img src="bilder/internett/internett_bilde1.jpeg">
+                <div class="tekst">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda officia dolor et minus
+                        impedit deserunt consequuntur. Voluptate fugit ea obcaecati, hic fuga facere eligendi
+                        praesentium assumenda, repellendus, iste ad similique?</p>
+                </div>
+                <div class="tekst">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda officia dolor et minus
+                        impedit deserunt consequuntur. Voluptate fugit ea obcaecati, hic fuga facere eligendi
+                        praesentium assumenda, repellendus, iste ad similique?</p>
+                </div>
+            </div>
         </div>
     </main>
 

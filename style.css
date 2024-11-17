@@ -20,6 +20,12 @@ body {
     font-weight: 100;
     background-color: rgb(241 240 236);
 }
+footer {
+    height: 150px;
+    margin-top: 30px;
+    background-color: rgb(38, 37, 33);
+    color: rgb(241 240 236);
+}
 
 /* NAV */
 
@@ -37,6 +43,11 @@ nav {
     align-items: center;
     text-align: center;
     z-index: 1000;
+<<<<<<< HEAD
+=======
+    border-bottom: 1px solid rgb(38, 37, 33);
+    margin-inline: 20px;
+>>>>>>> 6eb99c18fc30ec9d1b879bdf6809e71c7f50cb53
 }
 
 .internett nav {}
@@ -58,7 +69,11 @@ nav {
 .navknapp:hover {
     background-color: rgb(88, 87, 85) !important;
     color: rgb(241 240 236);
+    height: 80%;
+    border-radius: 10%;
+    animation: shaking 0.2s;
 }
+<<<<<<< HEAD
 
 .fa-home {
     font-size: 90px;
@@ -67,12 +82,17 @@ nav {
 
 #mellomrom {
     height: 80px;
+=======
+#mellomrom {
+    height: 70px;
+>>>>>>> 6eb99c18fc30ec9d1b879bdf6809e71c7f50cb53
     width: 100%;
 }
 
 nav a#active {
     background-color: rgb(38, 37, 33);
     color: rgb(241 240 236);
+<<<<<<< HEAD
 }
 
 
@@ -87,4 +107,19 @@ nav::after {
     left: 0;
     margin: auto;
 
+=======
+    height: 80%;
+    border-radius: 10%;
+}
+@keyframes shaking{
+    0%, 50%, 100%{
+        transform: rotate(0deg);
+    }
+    20%{
+        transform: rotate(3deg);
+    }
+    70%{
+        transform: rotate(-3deg);
+    }
+>>>>>>> 6eb99c18fc30ec9d1b879bdf6809e71c7f50cb53
 }

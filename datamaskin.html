@@ -22,21 +22,119 @@
             font-weight: 900;
         }
         .hero-image{
-            background-image: url(bilder/datamaskin/hero_image_datamaskin.jpeg);
+            background-image: url(bilder/datamaskin/hero_image_datamaskin.jpg);
             background-size: cover;
             height: 450px;
             display: flex;
             justify-content: center;
             margin: 30px;
             margin-top: -70px;
+            margin-bottom: 80px;
             border-radius: 1%;
         }
         .fa-home{
-            font-size: 90px;
+        font-size: 40px;    
+        }
+        .datamaskin .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 600px 200px 200px;
+            row-gap: 100px;
+
+        }
+
+        .datamaskin aside {
+            grid-column: 1/3;
+            grid-row: 1/2;
+            background-color: rgb(38, 37, 33);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .datamaskin article {
+            grid-column: 3/5;
+            grid-row: 1/2;
+            padding: 20px;
+            background-color: rgb(38, 37, 33);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .datamaskin .bilder{
+            grid-column: 1/5;
+            grid-row: 2/4;
+            padding: 20px;
+            background-color: rgb(241 240 236);
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            position: relative;
+        }
+        aside .bilde {
+            width: 600px;
+            padding: 20px;
+            border-radius: 50%;
+            height: 600px;
+            object-fit: cover;
+        }
+        .tekst {
+            width: 200px;
+            font-size: 12px;
+            opacity: 0;
+            position: absolute;
+            flex-wrap: nowrap;
+            display: flex;
+            text-align: center;
+            font-weight: 300;
+            transition: 1.3s;
+        }
+
+        .hovedtekst {
+            width: 70%;
+            color: rgb(241 240 236);
+            font-size: 20px;
+            font-weight: 300;
+        }
+        .bilder img {
+            width: 250px;
+        }
+        .bilder .bilde:hover img {
+            opacity: 0.1;
+        }
+
+        .bilder .bilde:hover .sticker img {
+            opacity: 1;
+        }
+
+        .bilder .bilde:hover .tekst {
+            opacity: 1;
+            color: black;
+            font-weight: 300;
+        }
+        .internett .bilde {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .bilder .bilde{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .mellomrom{
+            width: 100%;
+            height: 70px;
+        }
+        .tekst p{
+
         }
 </style>
 </head>
-<body>
+<body class="datamaskin">
     <header>
         <nav>
             <a href="index.html" class="navknapp">
@@ -62,6 +160,89 @@
         </div>
 
     </header>
-    
+    <main class="grid-container">
+        <aside>
+            <img class="bilde" src="bilder/internett/internett_bilde1.jpeg">
+        </aside>
+        <article>
+            <div class="hovedtekst">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur
+                    adipisicing elit. Odio nostrum accusantium placeat quibusdam, minima consequatur dolorem temporibus
+                    cupiditate, adipisci, quisquam facilis quia eaque incidunt sint corrupti ullam. At, culpa vel. Lorem
+                    ipsum dolor sit, amet consectetur adipisicing elit. Nihil, recusandae officia. Quis quas vero atque
+                    aut eaque dolor beatae dignissimos iusto, a facere impedit cumque delectus officiis deleniti nisi!
+              
+                </p>
+            </div>
+        </article>
+        <div class="bilder">
+            <div class="bilde">
+                <img src="bilder/internett/internett_bilde1.jpeg">
+                <div class="tekst">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda officia dolor et minus
+                        impedit deserunt consequuntur. Voluptate fugit ea obcaecati, hic fuga facere eligendi
+                        praesentium assumenda, repellendus, iste ad similique?</p>
+                </div>
+            </div>
+            <div class="bilde">
+                <img src="bilder/internett/internett_bilde1.jpeg">
+                <div class="tekst">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda officia dolor et minus
+                        impedit deserunt consequuntur. Voluptate fugit ea obcaecati, hic fuga facere eligendi
+                        praesentium assumenda, repellendus, iste ad similique?</p>
+                </div>
+            </div>
+            <div class="bilde">
+                <img src="bilder/internett/internett_bilde1.jpeg">
+                <div class="tekst">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda officia dolor et minus
+                        impedit deserunt consequuntur. Voluptate fugit ea obcaecati, hic fuga facere eligendi
+                        praesentium assumenda, repellendus, iste ad similique?</p>
+                </div>
+                <div class="tekst">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda officia dolor et minus
+                        impedit deserunt consequuntur. Voluptate fugit ea obcaecati, hic fuga facere eligendi
+                        praesentium assumenda, repellendus, iste ad similique?</p>
+                </div>
+            </div>
+            
+            <div class="mellomrom">
+
+            </div>
+
+            <div class="bilde">
+                <img src="bilder/internett/internett_bilde1.jpeg">
+                <div class="tekst">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda officia dolor et minus
+                        impedit deserunt consequuntur. Voluptate fugit ea obcaecati, hic fuga facere eligendi
+                        praesentium assumenda, repellendus, iste ad similique?</p>
+                </div>
+            </div>
+            <div class="bilde">
+                <img src="bilder/internett/internett_bilde1.jpeg">
+                <div class="tekst">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda officia dolor et minus
+                        impedit deserunt consequuntur. Voluptate fugit ea obcaecati, hic fuga facere eligendi
+                        praesentium assumenda, repellendus, iste ad similique?</p>
+                </div>
+            </div>
+            <div class="bilde">
+                <img src="bilder/internett/internett_bilde1.jpeg">
+                <div class="tekst">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda officia dolor et minus
+                        impedit deserunt consequuntur. Voluptate fugit ea obcaecati, hic fuga facere eligendi
+                        praesentium assumenda, repellendus, iste ad similique?</p>
+                </div>
+                <div class="tekst">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda officia dolor et minus
+                        impedit deserunt consequuntur. Voluptate fugit ea obcaecati, hic fuga facere eligendi
+                        praesentium assumenda, repellendus, iste ad similique?</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        
+    </footer>
 </body>
 </html>
