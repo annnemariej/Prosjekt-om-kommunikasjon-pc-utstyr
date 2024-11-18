@@ -8,133 +8,6 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-            .overskrift{
-            display: flex;
-            position: relative;
-            color: rgb(38, 37, 33);
-            font-size: 120px;
-            justify-content: center;
-            margin-bottom: 0;
-            margin-top: 40px;
-        }
-        .overskrift h1{
-            font-family: "Space Grotesk", sans-serif;
-            font-weight: 900;
-        }
-        .hero-image{
-            background-image: url(bilder/nettverk/nettverk_hero_image.jpg);
-            background-size: cover;
-            height: 450px;
-            display: flex;
-            justify-content: center;
-            margin: 30px;
-            margin-top: -70px;
-            border-radius: 1%;
-        }
-        footer{
-            height: 150px;
-            margin-top: 30px;
-            background-color: rgb(38, 37, 33);
-            color:rgb(241 240 236) ;
-        }
-
-         .grid-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 450px 450px 450px;
-            width: 100vw;
-            align-items: center;
-            row-gap: 100px;
-
-        }
-        .nettverk .bilder {
-            grid-column: 1/3;
-            grid-row: 3/4;
-            padding: 20px;
-            background-color: rgb(241 240 236);
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-evenly;
-            position: relative;
-        }
-        #aside1{
-            grid-column: 1/2;
-            grid-row: 1/2;
-            background-color: rgb(241 240 236);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        #aside2{
-            grid-column: 2/3;
-            grid-row: 2/3;
-            background-color: rgb(241 240 236);
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        #article1{
-            grid-column: 2/3;
-            grid-row: 1/2;
-            background-color: rgb(241 240 236);
-            display: flex;
-            justify-content: center;
-            padding: 20px;
-        }
-        #article2{
-            grid-column: 1/2;
-            grid-row: 2/3;
-            background-color: rgb(241 240 236);
-            display: flex;
-            justify-content: center;
-            padding: 20px;
-        }
-        .bilder img {
-            width: 250px;
-        }
-        .bilder .bilde:hover img {
-            opacity: 0.1;
-        }
-
-        .bilder .bilde:hover .sticker img {
-            opacity: 1;
-        }
-
-        .bilder .bilde:hover .tekst {
-            opacity: 1;
-            color: black;
-            font-weight: 300;
-        }
-        .bilder .bilde{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .tekst {
-            width: 200px;
-            font-size: 12px;
-            opacity: 0;
-            position: absolute;
-            flex-wrap: nowrap;
-            display: flex;
-            text-align: center;
-            transition: 1.3s;
-            font-weight: 300;
-        }
-        .under_tekst {
-            display: flex;
-            width: 60%;
-            padding: 20px;
-        }
-        .bilde{
-            width: 450px;
-        }
-        .fa-home{
-    font-size: 40px;    
-}
     </style>
 </head>
 <body class="nettverk">
@@ -165,9 +38,9 @@
     </header>
     <main class="grid-container">
         <div id="aside1">
-            <div class="bilde">
+ 
                 <img src="bilder/internett/internett_bilde1.jpeg">
-            </div>
+
         </div>
         <div id="article1">
             <div class="under_tekst">
