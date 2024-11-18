@@ -9,140 +9,6 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        .overskrift {
-            display: flex;
-            position: relative;
-            color: rgb(38, 37, 33);
-            font-size: 120px;
-            justify-content: center;
-            margin-bottom: 0;
-            margin-top: 40px;
-        }
-
-        .overskrift h1 {
-            font-family: "Space Grotesk", sans-serif;
-            font-weight: 900;
-        }
-
-        .hero-image {
-            background-image: url(bilder/datamaskin/hero_image_datamaskin.jpg);
-            background-size: cover;
-            height: 450px;
-            display: flex;
-            justify-content: center;
-            margin: 30px;
-            margin-top: -70px;
-            margin-bottom: 80px;
-            border-radius: 1%;
-        }
-
-        .fa-home {
-            font-size: 40px;
-        }
-
-        .datamaskin .grid-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-rows: 600px 200px 200px;
-            row-gap: 100px;
-
-        }
-
-        .datamaskin aside {
-            grid-column: 1/3;
-            grid-row: 1/2;
-            background-color: rgb(38, 37, 33);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .datamaskin article {
-            grid-column: 3/5;
-            grid-row: 1/2;
-            padding: 20px;
-            background-color: rgb(38, 37, 33);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-        }
-
-        .datamaskin .bilder {
-            grid-column: 1/5;
-            grid-row: 2/4;
-            padding: 20px;
-            background-color: rgb(241 240 236);
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-            position: relative;
-        }
-
-        aside .bilde {
-            width: 600px;
-            padding: 20px;
-            border-radius: 50%;
-            height: 600px;
-            object-fit: cover;
-        }
-
-        .tekst {
-            width: 200px;
-            font-size: 12px;
-            opacity: 0;
-            position: absolute;
-            flex-wrap: nowrap;
-            display: flex;
-            text-align: center;
-            font-weight: 300;
-            transition: 1.3s;
-        }
-
-        .hovedtekst {
-            width: 70%;
-            color: rgb(241 240 236);
-            font-size: 20px;
-            font-weight: 300;
-        }
-
-        .bilder img {
-            width: 250px;
-        }
-
-        .bilder .bilde:hover img {
-            opacity: 0.1;
-        }
-
-        .bilder .bilde:hover .sticker img {
-            opacity: 1;
-        }
-
-        .bilder .bilde:hover .tekst {
-            opacity: 1;
-            color: black;
-            font-weight: 300;
-        }
-
-        .internett .bilde {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .bilder .bilde {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .mellomrom {
-            width: 100%;
-            height: 70px;
-        }
-
-        .tekst p {}
     </style>
 </head>
 
@@ -174,48 +40,41 @@
     </header>
     <main class="grid-container">
         <aside>
-            <img class="bilde" src="bilder/internett/internett_bilde1.jpeg">
+            <img class="bilde" src="bilder/datamaskin/pc.png">
         </aside>
         <article>
             <div class="hovedtekst">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur
-                    adipisicing elit. Odio nostrum accusantium placeat quibusdam, minima consequatur dolorem temporibus
-                    cupiditate, adipisci, quisquam facilis quia eaque incidunt sint corrupti ullam. At, culpa vel. Lorem
-                    ipsum dolor sit, amet consectetur adipisicing elit. Nihil, recusandae officia. Quis quas vero atque
-                    aut eaque dolor beatae dignissimos iusto, a facere impedit cumque delectus officiis deleniti nisi!
-
+                <p> Ntesten alt digitalt utsyr er datamaskiner, og de bygges på samme måte. Men vet du hvordan en datamaskin er faktisk bygd opp? 
+                    Helt grunidng så består det ac en skjerm, et kabinett med komponenter, et tastatur og en mus. Men det er bygd opp av mye mer: Alle komponentener er kobletsammen via et hovedkort.
+                    Dette har flere ontakter som er kobler til andre komponenter som hovedprossesor, harddisk og lydkort.   Og nesten alt digitalt ustyr funger på den samme måten:
                 </p>
             </div>
         </article>
         <div class="bilder">
             <div class="bilde">
-                <img src="bilder/internett/internett_bilde1.jpeg">
+                <img src="bilder/datamaskin/hovedkortet.avif">
                 <div class="tekst">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda officia dolor et minus
-                        impedit deserunt consequuntur. Voluptate fugit ea obcaecati, hic fuga facere eligendi
-                        praesentium assumenda, repellendus, iste ad similique?</p>
+                    <p> Hovedkortet, kretskortet, brukes for å koble sammen de forskjellige delene i en datamaskin. 
+
+                    </p>
                 </div>
             </div>
             <div class="bilde">
-                <img src="bilder/internett/internett_bilde1.jpeg">
+                <img src="bilder/datamaskin/cpu.webp">
                 <div class="tekst">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda officia dolor et minus
-                        impedit deserunt consequuntur. Voluptate fugit ea obcaecati, hic fuga facere eligendi
-                        praesentium assumenda, repellendus, iste ad similique?</p>
+                    <p> I prosessoren blir koden i et dataprogram lest og utført.
+
+                    </p>
                 </div>
             </div>
             <div class="bilde">
-                <img src="bilder/internett/internett_bilde1.jpeg">
+                <img src="bilder/datamaskin/harddisk.png">
                 <div class="tekst">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda officia dolor et minus
-                        impedit deserunt consequuntur. Voluptate fugit ea obcaecati, hic fuga facere eligendi
-                        praesentium assumenda, repellendus, iste ad similique?</p>
+                    <p> Hardisken, sekundærminnet, lagrer operativsystem programmer og datafiler. PÅ grunn av dette har den stor lagringskapasitet.
+
+                    </p>
                 </div>
-                <div class="tekst">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda officia dolor et minus
-                        impedit deserunt consequuntur. Voluptate fugit ea obcaecati, hic fuga facere eligendi
-                        praesentium assumenda, repellendus, iste ad similique?</p>
-                </div>
+          
             </div>
 
             <div class="mellomrom">
@@ -223,33 +82,29 @@
             </div>
 
             <div class="bilde">
-                <img src="bilder/internett/internett_bilde1.jpeg">
+                <img src="bilder/datamaskin/ram.jpeg">
                 <div class="tekst">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda officia dolor et minus
-                        impedit deserunt consequuntur. Voluptate fugit ea obcaecati, hic fuga facere eligendi
-                        praesentium assumenda, repellendus, iste ad similique?</p>
+                    <p>I minnebrikket, også kjent som hurtigminne eller RAM, ligger de andre programmene og dataene som skal brukes lagret.
+
+                    </p>
                 </div>
             </div>
             <div class="bilde">
                 <img src="bilder/internett/internett_bilde1.jpeg">
                 <div class="tekst">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda officia dolor et minus
-                        impedit deserunt consequuntur. Voluptate fugit ea obcaecati, hic fuga facere eligendi
-                        praesentium assumenda, repellendus, iste ad similique?</p>
+                    <p> Grafikkort tolker bilder og videoer og viser punktgraf på skjermen.
+
+                    </p>
                 </div>
             </div>
             <div class="bilde">
                 <img src="bilder/internett/internett_bilde1.jpeg">
                 <div class="tekst">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda officia dolor et minus
-                        impedit deserunt consequuntur. Voluptate fugit ea obcaecati, hic fuga facere eligendi
-                        praesentium assumenda, repellendus, iste ad similique?</p>
+                    <p>Nettverkskortet har kommunikasjon med andre datamaskiner og enheter i omgivelsene. Kommunikasjonen er enten via kabel (ethernet, fiber) eller trådløst (Wi-Fi).
+
+                    </p>
                 </div>
-                <div class="tekst">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda officia dolor et minus
-                        impedit deserunt consequuntur. Voluptate fugit ea obcaecati, hic fuga facere eligendi
-                        praesentium assumenda, repellendus, iste ad similique?</p>
-                </div>
+        
             </div>
         </div>
     </main>
