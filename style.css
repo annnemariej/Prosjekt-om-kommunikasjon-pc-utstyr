@@ -436,7 +436,7 @@ header {
     animation: shaking 0.3s;
 }
 
-.intenett .bilder .bilde:hover .tekst {
+.internett .bilder .bilde:hover .tekst {
     opacity: 1;
     color: black;
     font-weight: 300;
