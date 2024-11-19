@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+80s+Fade&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+80s+Fade&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&family=Poiret+One&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+80s+Fade&family=Space+Grotesk:wght@300..700&display=swap');
 
 /* CSS style reset*/
 
@@ -62,6 +63,7 @@ nav {
     font-family: 'Roboto';
     font-weight: 400;
     padding-inline: 20px;
+    border-bottom: 0.5px solid rgb(38, 37, 33);
 
 }
 
@@ -138,7 +140,7 @@ nav::after {
 }
 
 .overskrift h1 {
-    font-family: "Space Grotesk", sans-serif;
+    font-family: "Bowlby One", sans-serif;
     font-weight: 900;
     font-size: 149px;
 }
@@ -150,9 +152,9 @@ nav::after {
     font-size: 120px;
     justify-content: center;
     margin-bottom: 0;
-    margin-top: 40px;
+    margin-top: -7px;
     text-align: center;
-    font-family: "Space Grotesk", sans-serif;
+    font-family: "Bowlby One", sans-serif;
     font-weight: 900;
     font-size: 50px;
 }
@@ -173,17 +175,17 @@ header {
     background-image: url(bilder/index/hero_image_index.jpg);
     background-size: cover;
     background-position: 100% 48%;
-    height: 450px;
     display: flex;
     justify-content: center;
     margin: 30px;
     margin-top: -10px;
     border-radius: 1%;
     align-items: center;
+    line-height: 150px;
 }
 
 .index .hero-image {
-    height: 70vh;
+    height: 80vh;
     width: 100%;
 }
 
@@ -194,7 +196,7 @@ header {
     display: flex;
     justify-content: center;
     margin: 30px;
-    margin-top: -44px;
+    margin-top: -66px;
     border-radius: 1%;
 }
 
@@ -209,7 +211,7 @@ header {
     display: flex;
     justify-content: center;
     margin: 30px;
-    margin-top: -44px;
+    margin-top: -66px;
     margin-bottom: 80px;
     border-radius: 1%;
 }
@@ -221,7 +223,7 @@ header {
     display: flex;
     justify-content: center;
     margin: 30px;
-    margin-top: -44px;
+    margin-top: -66px;
     border-radius: 1%;
 }
 
