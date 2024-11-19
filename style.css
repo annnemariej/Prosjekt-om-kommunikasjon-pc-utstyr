@@ -169,6 +169,8 @@ header {
 
 /* HERO IMAGE*/
 
+
+
 .index .hero-image {
     background-image: url(bilder/index/hero_image_index.jpg);
     background-size: cover;
@@ -190,39 +192,35 @@ header {
 .internett .hero-image {
     background-image: url(bilder/internett/internett_hero_image.jpg);
     background-size: cover;
-    height: 450px;
-    display: flex;
-    justify-content: center;
-    margin: 30px;
-    margin-top: -44px;
-    border-radius: 1%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: auto; 
+    aspect-ratio: 16 / 9; 
 }
 
 .internett .hero-image {
-    height: 450px;
+    height: 71vh;
 }
 
 .datamaskin .hero-image {
     background-image: url(bilder/datamaskin/hero_image_datamaskin.jpg);
     background-size: cover;
-    height: 450px;
-    display: flex;
-    justify-content: center;
-    margin: 30px;
-    margin-top: -44px;
-    margin-bottom: 80px;
-    border-radius: 1%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: auto; 
+    aspect-ratio: 16 / 9; 
 }
 
 .nettverk .hero-image {
-    background-image: url(bilder/nettverk/nettverk_hero_image.jpg);
+    background-image: url(bilder/nettverk/nettverk123.jpg);
     background-size: cover;
-    height: 450px;
-    display: flex;
-    justify-content: center;
-    margin: 30px;
-    margin-top: -44px;
-    border-radius: 1%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: auto; 
+    aspect-ratio: 16 / 9; 
 }
 
 /* BODY*/
@@ -493,10 +491,10 @@ header {
 }
 
 .datamaskin .bilder img {
-    width: 20%; 
-    aspect-ratio: 1; 
-    object-fit: cover; 
-    max-width: 100%; 
+    width: 20%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    max-width: 100%;
     height: auto;
 }
 
@@ -606,7 +604,7 @@ header {
     padding: 20px;
 }
 
-.nettverk  img {
+.nettverk img {
     width: 80%;
 }
 
@@ -628,6 +626,13 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 30%;
+}
+
+.nettverk .bilder .bilde img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
 }
 
 .nettverk .tekst {
@@ -663,3 +668,84 @@ footer {
 
 
 /* MEDIA QUERIES*/
+
+@media (width < 844px) {
+    body {
+        background-color: aqua;
+    }
+
+    .overskrift h1 {
+        font-size: 110px;
+    }
+
+    /*INDEX*/
+
+
+    /*DATAMASKIN*/
+
+    .datamaskin article p {
+        font-size: 16px;
+    }
+
+    .datamaskin .bilder img {
+        width: 194px;
+    }
+
+
+    /*INTERNETT*/
+
+
+    /* NETTVERK*/
+
+
+}
+
+@media (width< 640px) {
+    body {
+        background-color: blueviolet;
+    }
+
+    .overskrift h1 {
+        font-size: 80px;
+    }
+
+    /*INDEX*/
+
+    /*DATAMASKIN*/
+
+    .datamaskin .bilder{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+    }
+
+    .datamaskin .bilder img {
+        width: 90%;
+        padding: 20px;
+    }
+    }
+
+    /*INTERNETT*/
+
+    /*NETTVERK*/
+}
+
+@media (width < 431px) {
+    body {
+        background-color: yellow;
+    }
+
+
+    .overskrift h1 {
+        font-size: 80px;
+    }
+
+    /*INDEX*/
+
+    /*DATAMASKIN*/
+
+    /*INTERNETT*/
+
+    /*NETTVERK*/
+}
+
