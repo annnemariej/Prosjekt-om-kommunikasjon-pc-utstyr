@@ -692,6 +692,9 @@ footer {
         flex-direction: column;
         
     }
+    .nettverk img {
+        width: 100%;
+    }
 
 }
 
@@ -753,6 +756,9 @@ footer {
         align-items: center;
         flex-direction: column;
 
+    }
+    .nettverk .bilder .bilde {
+        width: 100%;
     }
 }
 
