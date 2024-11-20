@@ -664,9 +664,7 @@ footer {
 /* MEDIA QUERIES*/
 
 @media (width < 844px) {
-    body {
-       
-    }
+    body {}
 
     .overskrift h1 {
         font-size: 84px;
@@ -696,9 +694,7 @@ footer {
 }
 
 @media (width< 640px) {
-    body {
-       
-    }
+    body {}
 
     .overskrift h1 {
         font-size: 53px;
@@ -753,8 +749,6 @@ footer {
 }
 
 @media (width < 431px) {
-    body {
-        
-    }
+    body {}
 
 }
