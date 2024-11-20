@@ -388,6 +388,7 @@ header {
 
 .internett .hovedtekst {
     width: 50%;
+    font-size: 20px;
 }
 
 .internett .under_tekst {
@@ -664,7 +665,7 @@ footer {
 
 @media (width < 844px) {
     body {
-        background-color: aqua;
+       
     }
 
     .overskrift h1 {
@@ -696,7 +697,7 @@ footer {
 
 @media (width< 640px) {
     body {
-        background-color: blueviolet;
+       
     }
 
     .overskrift h1 {
@@ -753,7 +754,7 @@ footer {
 
 @media (width < 431px) {
     body {
-        background-color: yellow;
+        
     }
 
 }
