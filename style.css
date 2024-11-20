@@ -181,6 +181,7 @@ header {
     width: 100%;
     height: auto;
     aspect-ratio: 16 / 9;
+    margin-top: 20px;
 }
 
 .index .hero-image {
