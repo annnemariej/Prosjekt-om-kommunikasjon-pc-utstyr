@@ -686,6 +686,12 @@ footer {
         height: 400px;
         object-fit: cover;
     }
+    .nettverk .grid-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+    }
 
 }
 
@@ -742,9 +748,17 @@ footer {
         width: 90%;
         padding: 20px;
     }
+    .nettverk .grid-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
 }
 
 @media (width < 431px) {
     body {}
+
+
 
 }
