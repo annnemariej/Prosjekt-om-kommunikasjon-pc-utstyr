@@ -666,10 +666,14 @@ footer {
         font-size: 84px;
     }
 
+    /*INDEX*/
+
     .index .bilder .bilde img {
         width: 145px;
         height: 145px;
     }
+
+    /*DATAMASKIN*/
 
     .datamaskin article p {
         font-size: 16px;
@@ -686,6 +690,9 @@ footer {
         height: 400px;
         object-fit: cover;
     }
+
+    /*NETTVERK*/
+
     .nettverk .grid-container {
         display: flex;
         align-items: center;
@@ -695,6 +702,12 @@ footer {
     .nettverk img {
         width: 100%;
     }
+    .nettverk .under_tekst {
+        width: 90%;
+    }
+
+    /*INTERNETT*/
+
     .internett .grid-container {
         display: flex;
         align-items: center;
@@ -716,6 +729,8 @@ footer {
         font-size: 53px;
     }
 
+    /*INDEX*/
+
     .index .bilder {
         flex-direction: column;
         align-items: center;
@@ -725,6 +740,8 @@ footer {
         width: 250px;
         height: 250px;
     }
+
+    /*DATAMASKIN*/
 
     .datamaskin .bilder {
         display: flex;
@@ -752,6 +769,8 @@ footer {
         object-fit: cover;
     }
 
+    /*NETTVERK*/
+
     .nettverk .bilder {
         display: flex;
         position: relative;
@@ -762,15 +781,24 @@ footer {
         width: 90%;
         padding: 20px;
     }
+    
     .nettverk .grid-container {
         display: flex;
         align-items: center;
         flex-direction: column;
 
     }
+
     .nettverk .bilder .bilde {
         width: 100%;
     }
+
+    .nettverk .under_tekst {
+        width: 90%;
+    }
+
+    /*INTERNETT*/
+
     .internett .grid-container {
         display: flex;
         align-items: center;
