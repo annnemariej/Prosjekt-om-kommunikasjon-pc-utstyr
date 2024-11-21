@@ -668,9 +668,13 @@ footer {
 
     /*INDEX*/
 
-    .index .bilder .bilde img {
-        width: 145px;
-        height: 145px;
+    .index .bilder {
+        flex-direction: column;
+        align-items: center;
+    }
+    .index .bilder .bilde img{
+        height: 400px;
+        width: 400px;
     }
 
     /*DATAMASKIN*/
@@ -781,7 +785,7 @@ footer {
         width: 90%;
         padding: 20px;
     }
-    
+
     .nettverk .grid-container {
         display: flex;
         align-items: center;
